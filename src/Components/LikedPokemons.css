@@ -1,0 +1,23 @@
+.liked-pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.liked-pokemon-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.liked-pokemon-card img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 8px;
+}
+.liked-pokemon-container {
+  display: flex;
+}

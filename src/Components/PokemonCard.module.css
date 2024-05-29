@@ -39,11 +39,11 @@
 }
 
 .pokemon-details li:nth-child(odd) {
-  background-color: #4caf50; /* Green */
+  background-color: orchid;
 }
 
 .pokemon-details li:nth-child(even) {
-  background-color: #2196f3; /* Blue */
+  background-color: #2196f3;
 }
 
 .pokemon-card-buttons {
