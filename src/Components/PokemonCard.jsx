@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./PokemonCard.module.css";
 
 const PokemonCard = ({ pokemon, onLike, onDislike }) => {
   if (!pokemon) return null;
@@ -7,28 +8,27 @@ const PokemonCard = ({ pokemon, onLike, onDislike }) => {
   const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`;
 
   return (
-    <div className="pokemon-card">
+    <div className={styles["pokemon-card"]}>
       <h2>{name}</h2>
       <img src={imageUrl} alt={name} />
-      <div className="pokemon-details">
-        <h3>Abilities:</h3>
+      <div className={styles["pokemon-details"]}>
         <ul>
           {abilities.map((ability, index) => (
             <li key={index}>{ability.ability.name}</li>
           ))}
         </ul>
-        <h3>Types:</h3>
+
         <ul>
           {types.map((type, index) => (
             <li key={index}>{type.type.name}</li>
           ))}
         </ul>
       </div>
-      <div className="pokemon-card-buttons">
-        <button className="like-button" onClick={onLike}>
+      <div className={styles["pokemon-card-buttons"]}>
+        <button className={styles["like-button"]} onClick={onLike}>
           Like
         </button>
-        <button className="dislike-button" onClick={onDislike}>
+        <button className={styles["dislike-button"]} onClick={onDislike}>
           Dislike
         </button>
       </div>

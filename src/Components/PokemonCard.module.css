@@ -1,0 +1,31 @@
+.pokemon-card {
+  width: auto;
+  border-radius: 10px;
+  border-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.pokemon-card-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.like-button {
+  background-color: rgb(186, 226, 186);
+  border-color: black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.dislike-button {
+  background-color: lightcoral;
+  border-color: black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+}
